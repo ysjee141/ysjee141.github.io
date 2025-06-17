@@ -1,0 +1,9 @@
+@use "@/styles/_mixin.scss" as mixin;
+
+.ant-menu-item {
+  text-transform: uppercase;
+
+  &.ant-menu-item-selected {
+    font-weight: 700;
+  }
+}

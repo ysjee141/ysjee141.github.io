@@ -1,0 +1,27 @@
+@use "@/styles/_mixin.scss" as mixin;
+
+.container {
+  @include mixin.containerInitial;
+  flex-direction: row;
+  gap: 16px;
+
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+
+    &.mobile {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

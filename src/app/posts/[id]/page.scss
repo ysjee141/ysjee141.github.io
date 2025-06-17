@@ -1,0 +1,242 @@
+//@import 'prism-themes/themes/prism-one-dark.css';
+
+.prose {
+  // 타이포그래피 기본
+  font-size: 16px;
+  line-height: 1.75;
+  color: #374151;
+
+  // 제목
+  h1, h2, h3, h4, h5, h6 {
+    color: #111827;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  h1 {
+    font-size: 2.25em;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  // 단락
+  p {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+
+  // 리스트
+  ul, ol {
+    padding-left: 1.625em;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+
+  li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  // 인라인 코드
+  code:not(pre code) {
+    font-family: ui-monospace, monospace;
+    font-size: 0.875em;
+    font-weight: 600;
+    color: #1f2937;
+    background-color: #f3f4f6;
+    padding: 0.2em 0.4em;
+    border-radius: 0.375rem;
+  }
+
+  // 코드 블록
+  pre {
+    color: #e5e7eb;
+    background-color: #1f2937;
+    overflow-x: auto;
+    font-size: 0.875em;
+    line-height: 1.7142857;
+    margin-top: 1.7142857em;
+    margin-bottom: 1.7142857em;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+
+    code {
+      background-color: transparent;
+      padding: 0;
+      font-size: inherit;
+      color: inherit;
+      font-weight: 400;
+      border-radius: 0;
+    }
+  }
+
+  // 인용구
+  blockquote {
+    font-style: italic;
+    color: #6b7280;
+    border-left: 4px solid #e5e7eb;
+    padding-left: 1em;
+    margin: 1.5em 0;
+  }
+
+  // 링크
+  a {
+    color: #2563eb;
+    text-decoration: underline;
+    font-weight: 500;
+
+    &:hover {
+      color: #1d4ed8;
+    }
+  }
+
+  // 이미지
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 2em auto;
+    border-radius: 0.5rem;
+  }
+
+  // 테이블
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+
+    th {
+      background-color: #f9fafb;
+      font-weight: 600;
+    }
+
+    td, th {
+      padding: 0.75em 1em;
+      border: 1px solid #e5e7eb;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9fafb;
+    }
+  }
+
+  // 수평선
+  hr {
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+    margin: 3em 0;
+  }
+
+  // 다크 모드
+  //@media (prefers-color-scheme: dark) {
+  //  color: #d1d5db;
+  //
+  //  h1, h2, h3, h4, h5, h6 {
+  //    color: #f3f4f6;
+  //  }
+  //
+  //  code:not(pre code) {
+  //    color: #e5e7eb;
+  //    background-color: #374151;
+  //  }
+  //
+  //  pre {
+  //    background-color: #1f2937;
+  //  }
+  //
+  //  blockquote {
+  //    color: #9ca3af;
+  //    border-left-color: #374151;
+  //  }
+  //
+  //  a {
+  //    color: #60a5fa;
+  //
+  //    &:hover {
+  //      color: #93c5fd;
+  //    }
+  //  }
+  //
+  //  table {
+  //    th {
+  //      background-color: #374151;
+  //    }
+  //
+  //    td, th {
+  //      border-color: #4b5563;
+  //    }
+  //
+  //    tr:nth-child(even) {
+  //      background-color: #1f2937;
+  //    }
+  //  }
+  //
+  //  hr {
+  //    border-color: #374151;
+  //  }
+  //}
+
+
+  pre {
+    position: relative;
+    background: #282c34;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    overflow-x: auto;
+
+    &[class*="language-"] {
+      font-family: var(--font-family), serif;
+      ::before {
+        content: attr(data-language);
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 1.4rem;
+        color: #9ca3af;
+        text-transform: uppercase;
+      }
+    }
+
+
+    code {
+      background: none;
+      padding: 0;
+      font-size: 1.6rem;
+      line-height: 1.6;
+
+      &[class*="language-"] {
+        font-family: var(--font-family), serif;
+      }
+
+      .token.comment,
+      .token.prolog,
+      .token.doctype,
+      .token.cdata {
+        color: #7f848e;
+        font-style: italic;
+      }
+
+      .token.function {
+        color: #61afef;
+      }
+
+      .token.keyword {
+        color: #c678dd;
+      }
+
+      .token.string {
+        color: #98c379;
+      }
+    }
+  }
+}
