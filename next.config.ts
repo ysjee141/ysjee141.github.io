@@ -6,9 +6,14 @@ const nextConfig: NextConfig = {
     includePaths: [path.join(__dirname, 'style')],
   },
   output: 'export',
+  images: {
+    unoptimized: true,
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
+  basePath: process.env.NODE_ENV === 'production' ? '/happlog' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/happlog/' : '',
 };
 
 export default nextConfig;
