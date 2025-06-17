@@ -57,7 +57,7 @@ const SiteHeader: React.FC = () => {
   return (
     <Header style={HeaderStyle}>
       <div>
-        <Link href="/" style={LogoStyle}>{"{ [WIP] HAPPLOG }"}</Link>
+        <Link href="/" style={LogoStyle}>{"{ HAPPLOG }"}</Link>
       </div>
       <Menu
         mode="horizontal" defaultSelectedKeys={['0']}
