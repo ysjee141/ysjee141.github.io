@@ -12,8 +12,8 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/happlog' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/happlog/' : '',
+  // basePath: process.env.NODE_ENV === 'production' ? '/happlog' : '',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/happlog/' : '',
 };
 
 export default nextConfig;
