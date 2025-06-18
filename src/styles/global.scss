@@ -12,6 +12,12 @@
   --blue-20: rgba(0, 122, 255, 0.2);
 }
 
+@media (max-width: 550px) {
+  :root {
+    //--font-size: 6px;
+  }
+}
+
 //@media (prefers-color-scheme: dark) {
 //  :root {
 //    --background: #0a0a0a;

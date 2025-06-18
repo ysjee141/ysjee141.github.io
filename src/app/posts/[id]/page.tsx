@@ -39,6 +39,7 @@ export default async function Page({params}: PageProps) {
 
   const TitleStyle: React.CSSProperties = {
     fontWeight: '700',
+    fontSize: '3.4rem',
   }
 
   const FooterStyle: React.CSSProperties = {
@@ -56,7 +57,7 @@ export default async function Page({params}: PageProps) {
   return (
     <article className="max-w-4xl mx-auto py-8">
       <Title style={TitleStyle}>{post.title}</Title>
-      <Flex gap={'small'} justify={'space-between'}>
+      <Flex gap={'small'} justify={'space-between'} wrap={'wrap'}>
         <Text style={{fontSize: '1.6rem'}}>
           {post.date} ({readingTime}분)
         </Text>
