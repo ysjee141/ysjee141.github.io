@@ -133,6 +133,22 @@
     border: 0;
     border-top: 1px solid #e5e7eb;
     margin: 3em 0;
+    position: relative;
+    overflow: visible;
+    text-align: center;
+
+    &::after {
+      content: 'HAPPLOG';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--background);  // 배경색과 동일하게 설정
+      padding: 0 1em;  // 텍스트 좌우 여백
+      color: var(--black-20);  // 텍스트 색상
+      letter-spacing: 8px;
+      font-size: 1.4rem;
+    }
   }
 
   // 다크 모드

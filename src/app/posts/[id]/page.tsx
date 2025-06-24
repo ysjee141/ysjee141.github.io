@@ -5,7 +5,7 @@ import {Button, Divider, Flex, Tag} from "antd";
 import React from "react";
 import Title from "antd/lib/typography/Title";
 import Text from "antd/lib/typography/Text";
-import {ShareAltOutlined} from "@ant-design/icons";
+import {CalendarOutlined, ClockCircleOutlined, ShareAltOutlined} from "@ant-design/icons";
 
 interface PageProps {
   params: {
@@ -59,7 +59,14 @@ export default async function Page({params}: PageProps) {
       <Title style={TitleStyle}>{post.title}</Title>
       <Flex gap={'small'} justify={'space-between'} wrap={'wrap'}>
         <Text style={{fontSize: '1.6rem'}}>
-          {post.date} ({readingTime}분)
+          <Flex gap={'small'} wrap={'wrap'}>
+            <div>
+              <CalendarOutlined /> {post.date}
+            </div>
+            <div>
+              <ClockCircleOutlined /> {readingTime}분
+            </div>
+          </Flex>
         </Text>
         <div>
           {post.tags.map((tag) => (
