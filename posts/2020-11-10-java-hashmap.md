@@ -1,5 +1,6 @@
 ---
 title: Java HashMap 동작 원리
+date: "2020-11-10"
 category: JDK
 tags: [Java]
 refs:

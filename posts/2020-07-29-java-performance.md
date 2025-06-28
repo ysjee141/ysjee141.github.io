@@ -1,5 +1,6 @@
 ---
 title: 성능을 생각하는 Java 코딩법
+date: "2020-07-29"
 category: Quality
 tags: Java
 published: false

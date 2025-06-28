@@ -1,6 +1,6 @@
 ---
 title: Annotation Attribute Value 변경하기
-date: "2025-06-15"
+date: "2021-07-07"
 category: Spring
 tags: [Spring, Annotation, Invocation]
 refs:

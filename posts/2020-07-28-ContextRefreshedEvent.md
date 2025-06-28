@@ -1,5 +1,6 @@
 ---
 title: Spring Boot Application Context Event
+date: "2020-07-28"
 category: Server-Side
 tags: [SpringBoot]
 ---

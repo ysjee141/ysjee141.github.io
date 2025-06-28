@@ -1,5 +1,6 @@
 ---
 title: 다중 데이터 소스를 통한 동적 MyBatis Mapper Scanner 생성
+date: "2020-08-04"
 category: Server-Side
 tags: [SpringBoot,MyBatis]
 source: https://github.com/ysjee141/dynamic-mapper-scanner

@@ -1,5 +1,6 @@
 ---
 title: Spring Framework IoC, DI란
+date: "2020-12-10"
 category: Spring
 tags: [Spring, IoC, DI]
 refs:

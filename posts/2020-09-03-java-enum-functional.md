@@ -1,6 +1,6 @@
 ---
 title: enum 보다 잘 활용하기
-date: "2025-06-15"
+date: "2020-09-03"
 category: Server-Side 
 tags: [Java]
 source: https://gist.github.com/ysjee141/70b30b3426fbbf01563dcea45c6dc95e

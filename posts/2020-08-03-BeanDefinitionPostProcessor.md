@@ -1,5 +1,6 @@
 ---
 title: BeanDefinitionRegistryPostProcessor의 사용
+date: "2020-08-03"
 category: Server-Side
 tags: [SpringBoot]
 ---

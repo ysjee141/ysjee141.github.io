@@ -1,5 +1,6 @@
 ---
 title: Spring Boot를 Docker 환경으로 개발/디버깅 하기
+date: "2020-08-19"
 category: Dev Tools
 tags: [SpringBoot, IntelliJ, Devtools, Docker]
 refs:

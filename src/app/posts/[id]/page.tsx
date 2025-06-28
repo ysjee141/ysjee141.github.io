@@ -15,7 +15,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams(): Promise<PageProps['params'][]> {
-  const posts = getSortedPostsData();
+  const posts = await getSortedPostsData();
   return posts.posts.map((post) => ({
     id: post.id,
   }));
@@ -24,10 +24,8 @@ export async function generateStaticParams(): Promise<PageProps['params'][]> {
 export function calculateReadingTime(content: string): number {
   const wordsPerMinute = 200;
   const words = content.trim().split(/\s+/).length;
-  const readingTime = Math.ceil(words / wordsPerMinute);
-  return readingTime;
+  return Math.ceil(words / wordsPerMinute);
 }
-
 
 export default async function Page({params}: PageProps) {
   const post = await getPostData(params.id);

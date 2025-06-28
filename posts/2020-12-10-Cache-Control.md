@@ -1,5 +1,6 @@
 ---
 title: Cache-Control에 대하여
+date: "2020-12-10"
 category: HTTP
 tags: [HTTP, Cache]
 refs:
