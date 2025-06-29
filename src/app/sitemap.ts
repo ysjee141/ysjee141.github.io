@@ -7,7 +7,7 @@ export const dynamic = 'force-static'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // 기본 URL 설정
-  const baseUrl = 'http://www.happl.xyz'
+  const baseUrl = 'https://www.happl.xyz'
 
   // 정적 경로
   const staticRoutes = [
