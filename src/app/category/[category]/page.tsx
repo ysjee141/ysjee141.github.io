@@ -23,7 +23,7 @@ export async function generateStaticParams(): Promise<PageProps['params'][]> {
 }
 
 export default async function Page({params}: PageProps) {
-  let { category } = await params;
+  let {category} = await params;
   category = decodeURIComponent(category);
   const data = await getCategorySortedPostData(category);
   const titleStyle: React.CSSProperties = {
@@ -39,7 +39,7 @@ export default async function Page({params}: PageProps) {
         <Typography style={titleStyle}>
           <Title style={{margin: 0}} level={4}>Category: {category}</Title>
         </Typography>
-        <PostList posts={data.posts} />
+        <PostList posts={data.posts}/>
       </Layout>
     </Layout>
   );

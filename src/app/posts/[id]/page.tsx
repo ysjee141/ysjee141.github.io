@@ -28,7 +28,8 @@ export function calculateReadingTime(content: string): number {
 }
 
 export default async function Page({params}: PageProps) {
-  const post = await getPostData(params.id);
+  const {id} = await params;
+  const post = await getPostData(id);
   const readingTime = calculateReadingTime(post.contentHtml);
   const DividerStyle: React.CSSProperties = {
     letterSpacing: '10px',
@@ -59,10 +60,10 @@ export default async function Page({params}: PageProps) {
         <Text style={{fontSize: '1.6rem'}}>
           <Flex gap={'small'} wrap={'wrap'}>
             <div>
-              <CalendarOutlined /> {post.date}
+              <CalendarOutlined/> {post.date}
             </div>
             <div>
-              <ClockCircleOutlined /> {readingTime}분
+              <ClockCircleOutlined/> {readingTime}분
             </div>
           </Flex>
         </Text>
