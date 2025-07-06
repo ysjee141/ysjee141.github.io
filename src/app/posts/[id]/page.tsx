@@ -6,8 +6,6 @@ import React from "react";
 import Title from "antd/lib/typography/Title";
 import Text from "antd/lib/typography/Text";
 import {CalendarOutlined, ClockCircleOutlined, ShareAltOutlined} from "@ant-design/icons";
-import {NextSeo} from "next-seo";
-import {WithHead} from "next-seo/lib/meta/withHead";
 import SchemaOrg from "@/component/schema-org";
 import {Metadata} from "next";
 
