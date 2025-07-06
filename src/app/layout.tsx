@@ -37,6 +37,11 @@ export default function RootLayout({
       <meta name="google-adsense-account" content="ca-pub-2570618898847074"/>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2570618898847074"
               crossOrigin="anonymous"></script>
+      <meta name="description" content="누구나 알 수도 있는 기술 이야기" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta property="og:title" content="happlog" />
+      <meta property="og:description" content="누구나 알 수도 있는 기술 이야기" />
+      <meta property="og:type" content="website" />
     </head>
     <body>
     <AntdRegistry>

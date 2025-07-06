@@ -27,6 +27,15 @@ export type PostItem = {
   cover: string,
 }
 
+export type PostData = {
+  id: string,
+  contentHtml: string,
+  date: string,
+  title: string,
+  description: string,
+  tags: string[],
+}
+
 const getFileNames = <T>(callback: (id: string, contents: GrayMatterFile<string>) => T): T[] => {
   const fileNames = fs.readdirSync(postsDirectory);
   return fileNames.map((fileName) => {
@@ -154,7 +163,7 @@ export async function getSortedPostsData(): Promise<PostListType> {
   };
 }
 
-export async function getPostData(id: string) {
+export async function getPostData(id: string): Promise<PostData> {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
